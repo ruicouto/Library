@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="682.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.presentation.FXMLMainController">
+   <children>
+      <ListView fx:id="list" layoutY="40.0" prefHeight="321.0" prefWidth="183.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0" />
+      <ToolBar prefHeight="40.0" prefWidth="396.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <Button fx:id="newGame" mnemonicParsing="false" text="New game" />
+            <Button fx:id="details" mnemonicParsing="false" text="Details" />
+        </items>
+      </ToolBar>
+      <WebView fx:id="webView" layoutX="184.0" layoutY="41.0" prefHeight="345.0" prefWidth="439.0" AnchorPane.bottomAnchor="156.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="41.0" />
+      <BarChart fx:id="chart" layoutX="184.0" layoutY="425.0" prefHeight="150.0" prefWidth="542.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="7.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
